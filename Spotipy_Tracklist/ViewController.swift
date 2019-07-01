@@ -11,13 +11,15 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
 
-    let urlString = "<path-to-tracklist>";
-    private var myTableView: UITableView!
+    let urlString = "http://192.168.178.69:8055/tracklist.json";
+    private var tableView: UITableView!
+    private let refreshControl = UIRefreshControl()
+    private let dp = DataProvider()
+
     private var tracklist: NSMutableArray!
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(false)
-        let dp = DataProvider()
         self.tracklist = dp.fetchDataFromUrl(urlString: urlString)
     }
     
@@ -34,11 +36,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let displayWidth: CGFloat = self.view.frame.width
         let displayHeight: CGFloat = self.view.frame.height
         
-        myTableView = UITableView(frame: CGRect(x: 0, y: barHeight, width: displayWidth, height: displayHeight - barHeight))
-        myTableView.register(UITableViewCell.self, forCellReuseIdentifier: "MyCell")
-        myTableView.dataSource = self
-        myTableView.delegate = self
-        self.view.addSubview(myTableView)
+        tableView = UITableView(frame: CGRect(x: 0, y: barHeight, width: displayWidth, height: displayHeight - barHeight))
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "MyCell")
+        tableView.dataSource = self
+        tableView.delegate = self
+        if #available(iOS 10.0, *) {
+            tableView.refreshControl = refreshControl
+        } else {
+            tableView.addSubview(refreshControl)
+        }
+        refreshControl.addTarget(self, action: #selector(reloadData), for: .valueChanged)
+        self.view.addSubview(tableView)
+    }
+    
+    @objc func reloadData()
+    {
+        DispatchQueue.main.async {
+            self.tracklist = self.dp.fetchDataFromUrl(urlString: self.urlString)
+            self.tableView.reloadData()
+            self.refreshControl.endRefreshing()
+        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
