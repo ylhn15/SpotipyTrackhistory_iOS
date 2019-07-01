@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2607E3E722C9FB4C00F00FF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2607E3E622C9FB4C00F00FF4 /* AppDelegate.swift */; };
+		2607E3E922C9FB4C00F00FF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2607E3E822C9FB4C00F00FF4 /* ViewController.swift */; };
+		2607E3EC22C9FB4C00F00FF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2607E3EA22C9FB4C00F00FF4 /* Main.storyboard */; };
+		2607E3EE22C9FB4E00F00FF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2607E3ED22C9FB4E00F00FF4 /* Assets.xcassets */; };
+		2607E3F122C9FB4E00F00FF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2607E3EF22C9FB4E00F00FF4 /* LaunchScreen.storyboard */; };
+		2607E3FC22C9FB4E00F00FF4 /* Spotipy_TracklistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2607E3FB22C9FB4E00F00FF4 /* Spotipy_TracklistTests.swift */; };
+		2607E40722C9FB4E00F00FF4 /* Spotipy_TracklistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2607E40622C9FB4E00F00FF4 /* Spotipy_TracklistUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2607E3F822C9FB4E00F00FF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2607E3DB22C9FB4C00F00FF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2607E3E222C9FB4C00F00FF4;
+			remoteInfo = Spotipy_Tracklist;
+		};
+		2607E40322C9FB4E00F00FF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2607E3DB22C9FB4C00F00FF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2607E3E222C9FB4C00F00FF4;
+			remoteInfo = Spotipy_Tracklist;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2607E3E322C9FB4C00F00FF4 /* Spotipy_Tracklist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotipy_Tracklist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2607E3E622C9FB4C00F00FF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2607E3E822C9FB4C00F00FF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2607E3EB22C9FB4C00F00FF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2607E3ED22C9FB4E00F00FF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2607E3F022C9FB4E00F00FF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2607E3F222C9FB4E00F00FF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2607E3F722C9FB4E00F00FF4 /* Spotipy_TracklistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Spotipy_TracklistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2607E3FB22C9FB4E00F00FF4 /* Spotipy_TracklistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spotipy_TracklistTests.swift; sourceTree = "<group>"; };
+		2607E3FD22C9FB4E00F00FF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2607E40222C9FB4E00F00FF4 /* Spotipy_TracklistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Spotipy_TracklistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2607E40622C9FB4E00F00FF4 /* Spotipy_TracklistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spotipy_TracklistUITests.swift; sourceTree = "<group>"; };
+		2607E40822C9FB4E00F00FF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2607E3E022C9FB4C00F00FF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2607E3F422C9FB4E00F00FF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2607E3FF22C9FB4E00F00FF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2607E3DA22C9FB4C00F00FF4 = {
+			isa = PBXGroup;
+			children = (
+				2607E3E522C9FB4C00F00FF4 /* Spotipy_Tracklist */,
+				2607E3FA22C9FB4E00F00FF4 /* Spotipy_TracklistTests */,
+				2607E40522C9FB4E00F00FF4 /* Spotipy_TracklistUITests */,
+				2607E3E422C9FB4C00F00FF4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2607E3E422C9FB4C00F00FF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2607E3E322C9FB4C00F00FF4 /* Spotipy_Tracklist.app */,
+				2607E3F722C9FB4E00F00FF4 /* Spotipy_TracklistTests.xctest */,
+				2607E40222C9FB4E00F00FF4 /* Spotipy_TracklistUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2607E3E522C9FB4C00F00FF4 /* Spotipy_Tracklist */ = {
+			isa = PBXGroup;
+			children = (
+				2607E3E622C9FB4C00F00FF4 /* AppDelegate.swift */,
+				2607E3E822C9FB4C00F00FF4 /* ViewController.swift */,
+				2607E3EA22C9FB4C00F00FF4 /* Main.storyboard */,
+				2607E3ED22C9FB4E00F00FF4 /* Assets.xcassets */,
+				2607E3EF22C9FB4E00F00FF4 /* LaunchScreen.storyboard */,
+				2607E3F222C9FB4E00F00FF4 /* Info.plist */,
+			);
+			path = Spotipy_Tracklist;
+			sourceTree = "<group>";
+		};
+		2607E3FA22C9FB4E00F00FF4 /* Spotipy_TracklistTests */ = {
+			isa = PBXGroup;
+			children = (
+				2607E3FB22C9FB4E00F00FF4 /* Spotipy_TracklistTests.swift */,
+				2607E3FD22C9FB4E00F00FF4 /* Info.plist */,
+			);
+			path = Spotipy_TracklistTests;
+			sourceTree = "<group>";
+		};
+		2607E40522C9FB4E00F00FF4 /* Spotipy_TracklistUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2607E40622C9FB4E00F00FF4 /* Spotipy_TracklistUITests.swift */,
+				2607E40822C9FB4E00F00FF4 /* Info.plist */,
+			);
+			path = Spotipy_TracklistUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2607E3E222C9FB4C00F00FF4 /* Spotipy_Tracklist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2607E40B22C9FB4E00F00FF4 /* Build configuration list for PBXNativeTarget "Spotipy_Tracklist" */;
+			buildPhases = (
+				2607E3DF22C9FB4C00F00FF4 /* Sources */,
+				2607E3E022C9FB4C00F00FF4 /* Frameworks */,
+				2607E3E122C9FB4C00F00FF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spotipy_Tracklist;
+			productName = Spotipy_Tracklist;
+			productReference = 2607E3E322C9FB4C00F00FF4 /* Spotipy_Tracklist.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2607E3F622C9FB4E00F00FF4 /* Spotipy_TracklistTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2607E40E22C9FB4E00F00FF4 /* Build configuration list for PBXNativeTarget "Spotipy_TracklistTests" */;
+			buildPhases = (
+				2607E3F322C9FB4E00F00FF4 /* Sources */,
+				2607E3F422C9FB4E00F00FF4 /* Frameworks */,
+				2607E3F522C9FB4E00F00FF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2607E3F922C9FB4E00F00FF4 /* PBXTargetDependency */,
+			);
+			name = Spotipy_TracklistTests;
+			productName = Spotipy_TracklistTests;
+			productReference = 2607E3F722C9FB4E00F00FF4 /* Spotipy_TracklistTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2607E40122C9FB4E00F00FF4 /* Spotipy_TracklistUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2607E41122C9FB4E00F00FF4 /* Build configuration list for PBXNativeTarget "Spotipy_TracklistUITests" */;
+			buildPhases = (
+				2607E3FE22C9FB4E00F00FF4 /* Sources */,
+				2607E3FF22C9FB4E00F00FF4 /* Frameworks */,
+				2607E40022C9FB4E00F00FF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2607E40422C9FB4E00F00FF4 /* PBXTargetDependency */,
+			);
+			name = Spotipy_TracklistUITests;
+			productName = Spotipy_TracklistUITests;
+			productReference = 2607E40222C9FB4E00F00FF4 /* Spotipy_TracklistUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2607E3DB22C9FB4C00F00FF4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Yannick Lehnhausen";
+				TargetAttributes = {
+					2607E3E222C9FB4C00F00FF4 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					2607E3F622C9FB4E00F00FF4 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 2607E3E222C9FB4C00F00FF4;
+					};
+					2607E40122C9FB4E00F00FF4 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 2607E3E222C9FB4C00F00FF4;
+					};
+				};
+			};
+			buildConfigurationList = 2607E3DE22C9FB4C00F00FF4 /* Build configuration list for PBXProject "Spotipy_Tracklist" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2607E3DA22C9FB4C00F00FF4;
+			productRefGroup = 2607E3E422C9FB4C00F00FF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2607E3E222C9FB4C00F00FF4 /* Spotipy_Tracklist */,
+				2607E3F622C9FB4E00F00FF4 /* Spotipy_TracklistTests */,
+				2607E40122C9FB4E00F00FF4 /* Spotipy_TracklistUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2607E3E122C9FB4C00F00FF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2607E3F122C9FB4E00F00FF4 /* LaunchScreen.storyboard in Resources */,
+				2607E3EE22C9FB4E00F00FF4 /* Assets.xcassets in Resources */,
+				2607E3EC22C9FB4C00F00FF4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2607E3F522C9FB4E00F00FF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2607E40022C9FB4E00F00FF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2607E3DF22C9FB4C00F00FF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2607E3E922C9FB4C00F00FF4 /* ViewController.swift in Sources */,
+				2607E3E722C9FB4C00F00FF4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2607E3F322C9FB4E00F00FF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2607E3FC22C9FB4E00F00FF4 /* Spotipy_TracklistTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2607E3FE22C9FB4E00F00FF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2607E40722C9FB4E00F00FF4 /* Spotipy_TracklistUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2607E3F922C9FB4E00F00FF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2607E3E222C9FB4C00F00FF4 /* Spotipy_Tracklist */;
+			targetProxy = 2607E3F822C9FB4E00F00FF4 /* PBXContainerItemProxy */;
+		};
+		2607E40422C9FB4E00F00FF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2607E3E222C9FB4C00F00FF4 /* Spotipy_Tracklist */;
+			targetProxy = 2607E40322C9FB4E00F00FF4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2607E3EA22C9FB4C00F00FF4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2607E3EB22C9FB4C00F00FF4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2607E3EF22C9FB4E00F00FF4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2607E3F022C9FB4E00F00FF4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2607E40922C9FB4E00F00FF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2607E40A22C9FB4E00F00FF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2607E40C22C9FB4E00F00FF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Spotipy_Tracklist/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Yannick-Lehnhausen.Spotipy-Tracklist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2607E40D22C9FB4E00F00FF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Spotipy_Tracklist/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Yannick-Lehnhausen.Spotipy-Tracklist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2607E40F22C9FB4E00F00FF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Spotipy_TracklistTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Yannick-Lehnhausen.Spotipy-TracklistTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spotipy_Tracklist.app/Spotipy_Tracklist";
+			};
+			name = Debug;
+		};
+		2607E41022C9FB4E00F00FF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Spotipy_TracklistTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Yannick-Lehnhausen.Spotipy-TracklistTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spotipy_Tracklist.app/Spotipy_Tracklist";
+			};
+			name = Release;
+		};
+		2607E41222C9FB4E00F00FF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Spotipy_TracklistUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Yannick-Lehnhausen.Spotipy-TracklistUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Spotipy_Tracklist;
+			};
+			name = Debug;
+		};
+		2607E41322C9FB4E00F00FF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Spotipy_TracklistUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Yannick-Lehnhausen.Spotipy-TracklistUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Spotipy_Tracklist;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2607E3DE22C9FB4C00F00FF4 /* Build configuration list for PBXProject "Spotipy_Tracklist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2607E40922C9FB4E00F00FF4 /* Debug */,
+				2607E40A22C9FB4E00F00FF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2607E40B22C9FB4E00F00FF4 /* Build configuration list for PBXNativeTarget "Spotipy_Tracklist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2607E40C22C9FB4E00F00FF4 /* Debug */,
+				2607E40D22C9FB4E00F00FF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2607E40E22C9FB4E00F00FF4 /* Build configuration list for PBXNativeTarget "Spotipy_TracklistTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2607E40F22C9FB4E00F00FF4 /* Debug */,
+				2607E41022C9FB4E00F00FF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2607E41122C9FB4E00F00FF4 /* Build configuration list for PBXNativeTarget "Spotipy_TracklistUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2607E41222C9FB4E00F00FF4 /* Debug */,
+				2607E41322C9FB4E00F00FF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2607E3DB22C9FB4C00F00FF4 /* Project object */;
+}
