@@ -14,6 +14,8 @@
 		2607E3F122C9FB4E00F00FF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2607E3EF22C9FB4E00F00FF4 /* LaunchScreen.storyboard */; };
 		2607E3FC22C9FB4E00F00FF4 /* Spotipy_TracklistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2607E3FB22C9FB4E00F00FF4 /* Spotipy_TracklistTests.swift */; };
 		2607E40722C9FB4E00F00FF4 /* Spotipy_TracklistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2607E40622C9FB4E00F00FF4 /* Spotipy_TracklistUITests.swift */; };
+		26CFDD6B22CA03CF0077C94E /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CFDD6A22CA03CF0077C94E /* Track.swift */; };
+		26CFDD6D22CA0CFF0077C94E /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CFDD6C22CA0CFF0077C94E /* DataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		2607E40222C9FB4E00F00FF4 /* Spotipy_TracklistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Spotipy_TracklistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2607E40622C9FB4E00F00FF4 /* Spotipy_TracklistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spotipy_TracklistUITests.swift; sourceTree = "<group>"; };
 		2607E40822C9FB4E00F00FF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26CFDD6A22CA03CF0077C94E /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		26CFDD6C22CA0CFF0077C94E /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,12 @@
 			children = (
 				2607E3E622C9FB4C00F00FF4 /* AppDelegate.swift */,
 				2607E3E822C9FB4C00F00FF4 /* ViewController.swift */,
+				26CFDD6C22CA0CFF0077C94E /* DataProvider.swift */,
 				2607E3EA22C9FB4C00F00FF4 /* Main.storyboard */,
 				2607E3ED22C9FB4E00F00FF4 /* Assets.xcassets */,
 				2607E3EF22C9FB4E00F00FF4 /* LaunchScreen.storyboard */,
 				2607E3F222C9FB4E00F00FF4 /* Info.plist */,
+				26CFDD6A22CA03CF0077C94E /* Track.swift */,
 			);
 			path = Spotipy_Tracklist;
 			sourceTree = "<group>";
@@ -258,6 +264,8 @@
 			files = (
 				2607E3E922C9FB4C00F00FF4 /* ViewController.swift in Sources */,
 				2607E3E722C9FB4C00F00FF4 /* AppDelegate.swift in Sources */,
+				26CFDD6D22CA0CFF0077C94E /* DataProvider.swift in Sources */,
+				26CFDD6B22CA03CF0077C94E /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5UF3Y37KND;
 				INFOPLIST_FILE = Spotipy_Tracklist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5UF3Y37KND;
 				INFOPLIST_FILE = Spotipy_Tracklist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
