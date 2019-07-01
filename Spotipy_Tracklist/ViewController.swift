@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
 
-    let urlString = "http://192.168.178.69:8055/tracklist.json";
+    let urlString = "<path-to-tracklist";
     private var tableView: UITableView!
     private let refreshControl = UIRefreshControl()
     private let dp = DataProvider()
