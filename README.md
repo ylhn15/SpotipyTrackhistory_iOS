@@ -9,4 +9,4 @@ Replace ```path-to-tracklist```with the URL where the tracklist.json is hosted i
 - [x] Add function to change the ```path-to-tracklist``` in the application
 - [ ] Add dummy data
 - [ ] Add thumbnail to tableViewCell
-- [ ] Add function to open spotify web for the selected song
+- [x] Add function to open spotify web (spotify if installed) for the selected song
