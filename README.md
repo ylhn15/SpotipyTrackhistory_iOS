@@ -6,7 +6,7 @@ iOS Application to display data from the [Spotipy Tracklist](https://github.com/
 Replace ```path-to-tracklist```with the URL where the tracklist.json is hosted in JSON format to get it up and running.
 
 ## Next up
-- [ ] Add function to change the ```path-to-tracklist``` in the application
+- [x] Add function to change the ```path-to-tracklist``` in the application
 - [ ] Add dummy data
 - [ ] Add thumbnail to tableViewCell
 - [ ] Add function to open spotify web for the selected song
