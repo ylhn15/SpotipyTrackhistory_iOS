@@ -17,9 +17,10 @@ class DataProvider
         var tracklist = NSMutableArray()
         
         let data = try? NSData(contentsOf: url! as URL, options: NSData.ReadingOptions())
-        
-        let jsonObj = try? JSONSerialization.jsonObject(with: data! as Data, options: .allowFragments)
-        tracklist = self.createTracklistFromJson(json: jsonObj!)
+        if((data) != nil) {
+            let jsonObj = try? JSONSerialization.jsonObject(with: data! as Data, options: .allowFragments)
+            tracklist = self.createTracklistFromJson(json: jsonObj!)
+        }
         return tracklist
     }
     

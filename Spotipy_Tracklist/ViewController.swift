@@ -11,17 +11,59 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
 
-    let urlString = "<path-to-tracklist";
+    var urlString = UserDefaults.standard.string(forKey: "tracklist-url")
     private var tableView: UITableView!
     private let refreshControl = UIRefreshControl()
     private let dp = DataProvider()
 
     private var tracklist: NSMutableArray!
 
+    override func viewWillLayoutSubviews() {
+        let width = self.view.frame.width
+        let barHeight: CGFloat = UIApplication.shared.statusBarFrame.size.height
+        let navigationBar: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: barHeight, width: width, height: 44))
+        self.view.addSubview(navigationBar);
+        let navigationItem = UINavigationItem(title: "Spotify Tracklist")
+        
+        let settingsButton = UIBarButtonItem(title: NSString(string: "\u{2699}\u{0000FE0E}") as String, style: .plain, target: self, action: #selector(openUrlSettings))
+        let font = UIFont.systemFont(ofSize: 28) // adjust the size as required
+        let attributes = [NSAttributedString.Key.font: font]
+        settingsButton.setTitleTextAttributes(attributes, for: .normal)
+        
+        navigationItem.rightBarButtonItem = settingsButton
+        navigationBar.setItems([navigationItem], animated: false)
+    }
+    
+    @objc func openUrlSettings(sender : AnyObject){
+        let alertController = UIAlertController(title: "Set URL", message: "", preferredStyle: UIAlertController.Style.alert)
+        let saveAction = UIAlertAction(title: "Save", style: UIAlertAction.Style.default, handler: { alert -> Void in
+            let textField = alertController.textFields![0] as UITextField
+            UserDefaults.standard.setValue(textField.text, forKey: "tracklist-url")
+            self.urlString = textField.text
+            self.reloadData()
+        })
+        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: {
+            (action : UIAlertAction!) -> Void in })
+        alertController.addTextField { (textField : UITextField!) -> Void in
+            textField.placeholder = "URL"
+            if((self.urlString) != nil) {
+                textField.text = self.urlString
+            }
+        }
+        
+        alertController.addAction(saveAction)
+        alertController.addAction(cancelAction)
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(false)
-        self.tracklist = dp.fetchDataFromUrl(urlString: urlString)
+        self.edgesForExtendedLayout = []
+        self.tracklist = dp.fetchDataFromUrl(urlString: self.urlString ?? "")
     }
+    
     
     override func viewDidLoad()
     {
@@ -32,7 +74,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func createTable()
     {
-        let barHeight: CGFloat = UIApplication.shared.statusBarFrame.size.height
+        let barHeight: CGFloat = UIApplication.shared.statusBarFrame.size.height + 44
         let displayWidth: CGFloat = self.view.frame.width
         let displayHeight: CGFloat = self.view.frame.height
         
@@ -52,7 +94,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @objc func reloadData()
     {
         DispatchQueue.main.async {
-            self.tracklist = self.dp.fetchDataFromUrl(urlString: self.urlString)
+            self.tracklist = self.dp.fetchDataFromUrl(urlString: self.urlString ?? "")
             self.tableView.reloadData()
             self.refreshControl.endRefreshing()
         }
