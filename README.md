@@ -10,3 +10,4 @@ Replace ```path-to-tracklist```with the URL where the tracklist.json is hosted i
 - [ ] Add dummy data
 - [ ] Add thumbnail to tableViewCell
 - [x] Add function to open spotify web (spotify if installed) for the selected song
+- [ ] Lazy load thumbnails
