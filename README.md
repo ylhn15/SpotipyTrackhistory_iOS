@@ -3,8 +3,7 @@
 ## Description
 iOS Application to display data from the [Spotipy Tracklist](https://github.com/ylhn15/SpotipyTracklist), written in Swift.
 
-Replace ```path-to-tracklist```with the URL where the tracklist.json is hosted in JSON format to get it up and running.
-
+You can set the URL by opening the settings in the top right corner. On the first start, you need to set the URL before any data is displayed.
 ## Next up
 - [x] Add function to change the ```path-to-tracklist``` in the application
 - [ ] Add dummy data
